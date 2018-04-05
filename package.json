@@ -1,0 +1,28 @@
+{
+  "name": "powrautomation",
+  "version": "1.0.0",
+  "description": "POWr Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run clean-dist && tsc --outDir ./dist && protractor ./dist/steps/config.js",
+    "clean-dist": "rimraf ./dist"
+  },
+  "author": "Santiago Fernandez",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cucumber": "^4.0.1",
+    "@types/jasmine": "^2.8.6",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^4.1.0",
+    "cucumber-pretty": "^1.4.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jasminewd2": "^2.2.0",
+    "protractor": "^5.3.1",
+    "protractor-cucumber-framework": "^4.2.0",
+    "rimraf": "^2.6.2",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  }
+}
